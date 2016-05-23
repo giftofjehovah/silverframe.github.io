@@ -109,6 +109,7 @@ p {
 
 }
 
+
 .half-and-half {
   display: flex;
   flex-direction: row;
@@ -116,6 +117,28 @@ p {
   /*height: 100vh;*/
   font-family: 'Oxygen', sans-serif;
 
+}
+@media screen and (max-width: 767px) {
+  .half-and-half {
+    flex-direction: column;
+  }
+  .half2{
+    width: 100% !important;
+  }
+  .half1 {
+    width: 100% !important;
+    height: auto;
+  }
+  #rejection-img {
+    background-image: url('../images/field.jpg');
+    background-size: auto;;
+    width: 100%;
+    height: auto;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    /*position: absolute;*/
+    overflow: hidden;
+  }
 }
 
 .half1 {
